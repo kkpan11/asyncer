@@ -2,12 +2,46 @@
 
 ## Latest Changes
 
+### Internal
+
+* 👷 Update `labeler.yml`. PR [#238](https://github.com/fastapi/asyncer/pull/238) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update worfkow deploy-docs-notify URL. PR [#235](https://github.com/fastapi/asyncer/pull/235) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Upgrade Cloudflare GitHub Action. PR [#234](https://github.com/fastapi/asyncer/pull/234) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump mkdocs-macros-plugin from 1.0.5 to 1.2.0. PR [#220](https://github.com/fastapi/asyncer/pull/220) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.6.4 to 0.6.5. PR [#221](https://github.com/fastapi/asyncer/pull/221) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Update pytest requirement from <8.0.0,>=7.0.1 to >=7.0.1,<9.0.0. PR [#207](https://github.com/fastapi/asyncer/pull/207) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.6.2 to 0.6.4. PR [#217](https://github.com/fastapi/asyncer/pull/217) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tiangolo/issue-manager from 0.5.0 to 0.5.1. PR [#219](https://github.com/fastapi/asyncer/pull/219) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.9.0 to 1.10.1. PR [#216](https://github.com/fastapi/asyncer/pull/216) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.5.18 to 9.5.34. PR [#212](https://github.com/fastapi/asyncer/pull/212) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#209](https://github.com/fastapi/asyncer/pull/209) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump typer from 0.12.3 to 0.12.5. PR [#208](https://github.com/fastapi/asyncer/pull/208) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.11.1 to 1.11.2. PR [#206](https://github.com/fastapi/asyncer/pull/206) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Update `issue-manager.yml`. PR [#218](https://github.com/fastapi/asyncer/pull/218) by [@tiangolo](https://github.com/tiangolo).
+* 💚 Set `include-hidden-files` to `True` when using the `upload-artifact` GH action. PR [#215](https://github.com/fastapi/asyncer/pull/215) by [@svlandeg](https://github.com/svlandeg).
+* 👷 Update `latest-changes` GitHub Action. PR [#203](https://github.com/fastapi/asyncer/pull/203) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.8
+
+### Refactors
+
+* ♻️ Deprecate `asyncify(cancellable=True)` in favor of `asyncify(abandon_on_cancel=True)`, following AnyIO 4.1.0. PR [#202](https://github.com/fastapi/asyncer/pull/202) by [@tiangolo](https://github.com/tiangolo).
+* ♻️ Import `anyio.from_thread` and `anyio.to_thread` explicitly. PR [#201](https://github.com/fastapi/asyncer/pull/201) by [@tiangolo](https://github.com/tiangolo).
+* ♻️ Update `asyncify` to wrap the function with `functools.wraps` like the other functions. PR [#84](https://github.com/fastapi/asyncer/pull/84) by [@Gowee](https://github.com/Gowee).
+
 ### Docs
 
+* 📝 Add docs references to FastAPI's docs on virtual environments and new contributing guide. PR [#200](https://github.com/fastapi/asyncer/pull/200) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Add docs about repo management and team. PR [#184](https://github.com/tiangolo/asyncer/pull/184) by [@tiangolo](https://github.com/tiangolo).
 
 ### Internal
 
+* ⬆ Bump actions/cache from 3 to 4. PR [#114](https://github.com/fastapi/asyncer/pull/114) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.8.11 to 1.9.0. PR [#164](https://github.com/fastapi/asyncer/pull/164) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 10.1.0 to 10.4.0. PR [#167](https://github.com/fastapi/asyncer/pull/167) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.2.0 to 0.6.2. PR [#199](https://github.com/fastapi/asyncer/pull/199) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#157](https://github.com/fastapi/asyncer/pull/157) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump mypy from 1.4.1 to 1.11.1. PR [#171](https://github.com/fastapi/asyncer/pull/171) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔥 Remove unused scripts. PR [#197](https://github.com/fastapi/asyncer/pull/197) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Update converage configs. PR [#196](https://github.com/fastapi/asyncer/pull/196) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Add URLs to `pyproject.toml`, show up in PyPI. PR [#195](https://github.com/fastapi/asyncer/pull/195) by [@tiangolo](https://github.com/tiangolo).
