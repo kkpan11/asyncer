@@ -4,10 +4,433 @@
 
 ### Docs
 
+* 🐛 Use buttons for Termynal controls. PR [#650](https://github.com/fastapi/asyncer/pull/650) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Add Library Skills documentation. PR [#645](https://github.com/fastapi/asyncer/pull/645) by [@tiangolo](https://github.com/tiangolo).
+* 🐛 Prevent Termynal controls from scrolling. PR [#644](https://github.com/fastapi/asyncer/pull/644) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Recommend uv projects by default in docs. PR [#643](https://github.com/fastapi/asyncer/pull/643) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Update help docs. PR [#642](https://github.com/fastapi/asyncer/pull/642) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* ⬆ Bump the python-packages group with 9 updates. PR [#664](https://github.com/fastapi/asyncer/pull/664) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group with 4 updates. PR [#663](https://github.com/fastapi/asyncer/pull/663) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pre-commit hooks. PR [#665](https://github.com/fastapi/asyncer/pull/665) by [@pr-submit[bot]](https://github.com/apps/pr-submit).
+* ⬆️ Bump Typer min version to `0.26.1`. PR [#662](https://github.com/fastapi/asyncer/pull/662) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆️ Bump setup-uv action to 10.0.1. PR [#661](https://github.com/fastapi/asyncer/pull/661) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 👷 Migrate automatic labels to Latest Changes. PR [#659](https://github.com/fastapi/asyncer/pull/659) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Remove legacy label check. PR [#658](https://github.com/fastapi/asyncer/pull/658) by [@tiangolo](https://github.com/tiangolo).
+* 🔐 Use PR Submit for pull requests. PR [#657](https://github.com/fastapi/asyncer/pull/657) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Use GitHub CLI for Git authentication. PR [#656](https://github.com/fastapi/asyncer/pull/656) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Use PR Push commit identity. PR [#655](https://github.com/fastapi/asyncer/pull/655) by [@tiangolo](https://github.com/tiangolo).
+* 🔒 Replace pre-commit PAT with PR Push. PR [#653](https://github.com/fastapi/asyncer/pull/653) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Remove Zensical docs cache. PR [#652](https://github.com/fastapi/asyncer/pull/652) by [@tiangolo](https://github.com/tiangolo).
+* 🔥 Remove the old Latest Changes workflow. PR [#651](https://github.com/fastapi/asyncer/pull/651) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump the python-packages group across 1 directory with 7 updates. PR [#648](https://github.com/fastapi/asyncer/pull/648) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump anyio from 4.14.1 to 4.14.2. PR [#649](https://github.com/fastapi/asyncer/pull/649) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group with 5 updates. PR [#647](https://github.com/fastapi/asyncer/pull/647) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆️ Upgrade latest-changes to 0.7.1. PR [#646](https://github.com/fastapi/asyncer/pull/646) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump the python-packages group across 1 directory with 6 updates. PR [#641](https://github.com/fastapi/asyncer/pull/641) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group with 4 updates. PR [#639](https://github.com/fastapi/asyncer/pull/639) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pre-commit hooks. PR [#640](https://github.com/fastapi/asyncer/pull/640) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Set Dependabot schedule interval to "monthly". PR [#633](https://github.com/fastapi/asyncer/pull/633) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 👷 Add GH workflow to bump pre-commit hook versions. PR [#632](https://github.com/fastapi/asyncer/pull/632) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 👷 Fix latest-changes checkout target. PR [#636](https://github.com/fastapi/asyncer/pull/636) by [@tiangolo](https://github.com/tiangolo).
+* ⬆️ Update issue-manager to 0.8.1. PR [#635](https://github.com/fastapi/asyncer/pull/635) by [@tiangolo](https://github.com/tiangolo).
+* ⬆️ Update latest-changes to 0.6.1. PR [#634](https://github.com/fastapi/asyncer/pull/634) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump the python-packages group across 1 directory with 7 updates. PR [#631](https://github.com/fastapi/asyncer/pull/631) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump anyio from 4.13.0 to 4.14.1. PR [#623](https://github.com/fastapi/asyncer/pull/623) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group with 4 updates. PR [#630](https://github.com/fastapi/asyncer/pull/630) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.0.18 (2026-06-25)
+
+### Features
+
+* ✨ Add Agent Library Skill, install with `uvx library-skills`. PR [#627](https://github.com/fastapi/asyncer/pull/627) by [@tiangolo](https://github.com/tiangolo).
+
+### Upgrades
+
+* 🔧 Upgrade Zensical, refactor and improve its usage. PR [#590](https://github.com/fastapi/asyncer/pull/590) by [@tiangolo](https://github.com/tiangolo).
+
+### Docs
+
+* 📝 Update docs badges: remove Publish badge, it doesn't give extra information. PR [#619](https://github.com/fastapi/asyncer/pull/619) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Update and simpify docs about help and management. PR [#598](https://github.com/fastapi/asyncer/pull/598) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Update contributing docs, add references to central docs. PR [#597](https://github.com/fastapi/asyncer/pull/597) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Update security policy. PR [#595](https://github.com/fastapi/asyncer/pull/595) by [@tiangolo](https://github.com/tiangolo).
+* 🔒️ Only allow team members to modify dependencies. PR [#592](https://github.com/fastapi/asyncer/pull/592) by [@svlandeg](https://github.com/svlandeg).
+* 📝 Add dates to release notes. PR [#491](https://github.com/fastapi/asyncer/pull/491) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 📝 Update link syntax to minimal Markdown. PR [#500](https://github.com/fastapi/asyncer/pull/500) by [@tiangolo](https://github.com/tiangolo).
+* 🔨 Handle external links `target=_blank` and CSS automatically in JS and CSS. PR [#499](https://github.com/fastapi/asyncer/pull/499) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Fix docstring example for `TaskGroup.soonify()`. PR [#269](https://github.com/fastapi/asyncer/pull/269) by [@asifr](https://github.com/asifr).
+
+### Internal
+
+* 👷 Simplify pull request workflow triggers. PR [#626](https://github.com/fastapi/asyncer/pull/626) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update issue-manager to 0.7.1. PR [#625](https://github.com/fastapi/asyncer/pull/625) by [@tiangolo](https://github.com/tiangolo).
+* ⬆️ Update issue-manager to 0.7.0. PR [#624](https://github.com/fastapi/asyncer/pull/624) by [@tiangolo](https://github.com/tiangolo).
+* 🔒️ Update zizmor workflow security checks. PR [#620](https://github.com/fastapi/asyncer/pull/620) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Fix alls-green test dependency. PR [#618](https://github.com/fastapi/asyncer/pull/618) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump the python-packages group with 5 updates. PR [#617](https://github.com/fastapi/asyncer/pull/617) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 8.1.0 to 8.2.0 in the github-actions group. PR [#615](https://github.com/fastapi/asyncer/pull/615) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump https://github.com/crate-ci/typos from v1.46.0 to v1.47.2 in the pre-commit group. PR [#614](https://github.com/fastapi/asyncer/pull/614) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the python-packages group with 3 updates. PR [#613](https://github.com/fastapi/asyncer/pull/613) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group with 2 updates. PR [#612](https://github.com/fastapi/asyncer/pull/612) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the python-packages group with 4 updates. PR [#610](https://github.com/fastapi/asyncer/pull/610) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump the github-actions group across 1 directory with 3 updates. PR [#611](https://github.com/fastapi/asyncer/pull/611) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Automate release preparation. PR [#608](https://github.com/fastapi/asyncer/pull/608) by [@tiangolo](https://github.com/tiangolo).
+* 🔥 Remove old package stub slim, not used nor needed. PR [#607](https://github.com/fastapi/asyncer/pull/607) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump zensical from 0.0.42 to 0.0.43 in the python-packages group. PR [#606](https://github.com/fastapi/asyncer/pull/606) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Configure Dependabot to group updates and update weekly. PR [#594](https://github.com/fastapi/asyncer/pull/594) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 🔥 Remove config files now in central GitHub repo. PR [#600](https://github.com/fastapi/asyncer/pull/600) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Fix branch name in `guard-dependencies.yml`. PR [#593](https://github.com/fastapi/asyncer/pull/593) by [@svlandeg](https://github.com/svlandeg).
+* 🔧 Remove unnecessary Ruff rule ignore. PR [#591](https://github.com/fastapi/asyncer/pull/591) by [@tiangolo](https://github.com/tiangolo).
+* 🔒️ Add zizmor and fix audit findings. PR [#555](https://github.com/fastapi/asyncer/pull/555) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump mypy from 2.0.0 to 2.1.0. PR [#582](https://github.com/fastapi/asyncer/pull/582) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic-settings from 2.14.0 to 2.14.1. PR [#584](https://github.com/fastapi/asyncer/pull/584) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.34 to 0.0.35. PR [#581](https://github.com/fastapi/asyncer/pull/581) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.33 to 0.0.34. PR [#571](https://github.com/fastapi/asyncer/pull/571) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/add-to-project from 1.0.2 to 2.0.0. PR [#574](https://github.com/fastapi/asyncer/pull/574) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/labeler from 6.0.1 to 6.1.0. PR [#577](https://github.com/fastapi/asyncer/pull/577) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic from 2.13.3 to 2.13.4. PR [#580](https://github.com/fastapi/asyncer/pull/580) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.11 to 0.3.13. PR [#578](https://github.com/fastapi/asyncer/pull/578) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.20.2 to 2.0.0. PR [#579](https://github.com/fastapi/asyncer/pull/579) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Add pre-commit for typos. PR [#573](https://github.com/fastapi/asyncer/pull/573) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump typer from 0.25.0 to 0.25.1. PR [#570](https://github.com/fastapi/asyncer/pull/570) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.32 to 0.0.33. PR [#568](https://github.com/fastapi/asyncer/pull/568) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.11 to 0.15.12. PR [#567](https://github.com/fastapi/asyncer/pull/567) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.10 to 0.3.11. PR [#565](https://github.com/fastapi/asyncer/pull/565) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.24.2 to 0.25.0. PR [#566](https://github.com/fastapi/asyncer/pull/566) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.24.1 to 0.24.2. PR [#562](https://github.com/fastapi/asyncer/pull/562) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.20.1 to 1.20.2. PR [#561](https://github.com/fastapi/asyncer/pull/561) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.9 to 0.3.10. PR [#557](https://github.com/fastapi/asyncer/pull/557) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.31 to 0.0.32. PR [#558](https://github.com/fastapi/asyncer/pull/558) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic from 2.13.2 to 2.13.3. PR [#559](https://github.com/fastapi/asyncer/pull/559) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic-settings from 2.13.1 to 2.14.0. PR [#556](https://github.com/fastapi/asyncer/pull/556) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/cache from 5.0.4 to 5.0.5. PR [#550](https://github.com/fastapi/asyncer/pull/550) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic from 2.13.1 to 2.13.2. PR [#553](https://github.com/fastapi/asyncer/pull/553) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/upload-artifact from 7.0.0 to 7.0.1. PR [#551](https://github.com/fastapi/asyncer/pull/551) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump cloudflare/wrangler-action from 3.14.1 to 3.15.0. PR [#552](https://github.com/fastapi/asyncer/pull/552) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.10 to 0.15.11. PR [#554](https://github.com/fastapi/asyncer/pull/554) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 7.6.0 to 8.1.0. PR [#549](https://github.com/fastapi/asyncer/pull/549) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.30 to 0.0.31. PR [#547](https://github.com/fastapi/asyncer/pull/547) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic from 2.13.0 to 2.13.1. PR [#548](https://github.com/fastapi/asyncer/pull/548) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔒 Pin GitHub actions by commit SHA. PR [#528](https://github.com/fastapi/asyncer/pull/528) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump ty from 0.0.29 to 0.0.30. PR [#546](https://github.com/fastapi/asyncer/pull/546) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pygithub from 2.9.0 to 2.9.1. PR [#545](https://github.com/fastapi/asyncer/pull/545) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pydantic from 2.12.5 to 2.13.0. PR [#543](https://github.com/fastapi/asyncer/pull/543) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.8 to 0.3.9. PR [#541](https://github.com/fastapi/asyncer/pull/541) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.20.0 to 1.20.1. PR [#542](https://github.com/fastapi/asyncer/pull/542) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.9 to 0.15.10. PR [#540](https://github.com/fastapi/asyncer/pull/540) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pytest from 9.0.2 to 9.0.3. PR [#539](https://github.com/fastapi/asyncer/pull/539) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.28 to 0.0.29. PR [#536](https://github.com/fastapi/asyncer/pull/536) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.27 to 0.0.28. PR [#534](https://github.com/fastapi/asyncer/pull/534) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.8 to 0.15.9. PR [#535](https://github.com/fastapi/asyncer/pull/535) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔨 Add pre-commit hook to ensure latest release header has date. PR [#533](https://github.com/fastapi/asyncer/pull/533) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump pillow from 12.1.1 to 12.2.0. PR [#532](https://github.com/fastapi/asyncer/pull/532) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.26 to 0.0.27. PR [#529](https://github.com/fastapi/asyncer/pull/529) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.19.1 to 1.20.0. PR [#530](https://github.com/fastapi/asyncer/pull/530) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.30 to 0.0.31. PR [#531](https://github.com/fastapi/asyncer/pull/531) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.29 to 0.0.30. PR [#526](https://github.com/fastapi/asyncer/pull/526) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.7 to 0.15.8. PR [#524](https://github.com/fastapi/asyncer/pull/524) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.25 to 0.0.26. PR [#525](https://github.com/fastapi/asyncer/pull/525) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Configure `ty` to exit with error code on warnings. PR [#523](https://github.com/fastapi/asyncer/pull/523) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump ty from 0.0.24 to 0.0.25. PR [#521](https://github.com/fastapi/asyncer/pull/521) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.28 to 0.0.29. PR [#520](https://github.com/fastapi/asyncer/pull/520) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump anyio from 4.12.1 to 4.13.0. PR [#522](https://github.com/fastapi/asyncer/pull/522) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.6 to 0.3.8. PR [#518](https://github.com/fastapi/asyncer/pull/518) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pygithub from 2.8.1 to 2.9.0. PR [#519](https://github.com/fastapi/asyncer/pull/519) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.5 to 9.7.6. PR [#517](https://github.com/fastapi/asyncer/pull/517) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.27 to 0.0.28. PR [#515](https://github.com/fastapi/asyncer/pull/515) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.23 to 0.0.24. PR [#516](https://github.com/fastapi/asyncer/pull/516) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.6 to 0.15.7. PR [#514](https://github.com/fastapi/asyncer/pull/514) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ty from 0.0.21 to 0.0.23. PR [#511](https://github.com/fastapi/asyncer/pull/511) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.26 to 0.0.27. PR [#512](https://github.com/fastapi/asyncer/pull/512) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.5 to 0.3.6. PR [#513](https://github.com/fastapi/asyncer/pull/513) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump cairosvg from 2.8.2 to 2.9.0. PR [#510](https://github.com/fastapi/asyncer/pull/510) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Add `ty` to precommit. PR [#503](https://github.com/fastapi/asyncer/pull/503) by [@svlandeg](https://github.com/svlandeg).
+* 📌 Update internal dependency limits. PR [#506](https://github.com/fastapi/asyncer/pull/506) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump ruff from 0.15.5 to 0.15.6. PR [#508](https://github.com/fastapi/asyncer/pull/508) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump dorny/paths-filter from 3 to 4. PR [#507](https://github.com/fastapi/asyncer/pull/507) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.4 to 9.7.5. PR [#504](https://github.com/fastapi/asyncer/pull/504) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.24 to 0.0.26. PR [#505](https://github.com/fastapi/asyncer/pull/505) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.4 to 0.3.5. PR [#502](https://github.com/fastapi/asyncer/pull/502) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.4 to 0.15.5. PR [#501](https://github.com/fastapi/asyncer/pull/501) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.3 to 9.7.4. PR [#498](https://github.com/fastapi/asyncer/pull/498) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.2 to 0.15.4. PR [#495](https://github.com/fastapi/asyncer/pull/495) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/upload-artifact from 6 to 7. PR [#494](https://github.com/fastapi/asyncer/pull/494) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/download-artifact from 7 to 8. PR [#493](https://github.com/fastapi/asyncer/pull/493) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.3 to 0.3.4. PR [#496](https://github.com/fastapi/asyncer/pull/496) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.23 to 0.0.24. PR [#492](https://github.com/fastapi/asyncer/pull/492) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump zensical from 0.0.15 to 0.0.23. PR [#489](https://github.com/fastapi/asyncer/pull/489) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.2 to 9.7.3. PR [#490](https://github.com/fastapi/asyncer/pull/490) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 11.3.0 to 12.1.1. PR [#486](https://github.com/fastapi/asyncer/pull/486) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocstrings[python] from 0.30.1 to 1.0.3. PR [#482](https://github.com/fastapi/asyncer/pull/482) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Relax constraints for `griffe-typingdoc` and `griffe-warnings-deprecated`. PR [#488](https://github.com/fastapi/asyncer/pull/488) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Update all dependencies to use `griffelib` instead of `griffe`. PR [#487](https://github.com/fastapi/asyncer/pull/487) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump typer from 0.23.2 to 0.24.1. PR [#484](https://github.com/fastapi/asyncer/pull/484) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Upgrade pytest version and config. PR [#481](https://github.com/fastapi/asyncer/pull/481) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.17 (2026-02-21)
+
+### Internal
+
+* 👷 Fix CI, prevent CI from trying to build `asyncer-slim`. PR [#480](https://github.com/fastapi/asyncer/pull/480) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.16 (2026-02-21)
+
+### Internal
+
+* ➖ Drop support for `asyncer-slim`, no more versions will be released, use only `asyncer`. PR [#479](https://github.com/fastapi/asyncer/pull/479) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.15 (2026-02-20)
+
+### Breaking Changes
+
+* ➖ Drop support for Python 3.9. PR [#476](https://github.com/fastapi/asyncer/pull/476) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* 🔨 Update script to generate source examples, migrate from Python 3.9 to Python 3.10. PR [#478](https://github.com/fastapi/asyncer/pull/478) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Remove min-max testing of AnyIO, covered by uv resolution. PR [#477](https://github.com/fastapi/asyncer/pull/477) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump ruff from 0.15.1 to 0.15.2. PR [#475](https://github.com/fastapi/asyncer/pull/475) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.1 to 9.7.2. PR [#474](https://github.com/fastapi/asyncer/pull/474) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.23.1 to 0.23.2. PR [#473](https://github.com/fastapi/asyncer/pull/473) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.0.14 (2026-02-16)
+
+### Internal
+
+* 👷 Run tests with lower bound uv sync, upgrade `pytest` minimum dependency pin. PR [#464](https://github.com/fastapi/asyncer/pull/464) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump prek from 0.3.2 to 0.3.3. PR [#471](https://github.com/fastapi/asyncer/pull/471) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.23.0 to 0.23.1. PR [#470](https://github.com/fastapi/asyncer/pull/470) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.15.0 to 0.15.1. PR [#469](https://github.com/fastapi/asyncer/pull/469) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.21.1 to 0.23.0. PR [#468](https://github.com/fastapi/asyncer/pull/468) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.0.13 (2026-02-11)
+
+### Docs
+
+* 📝 Update management-tasks.md to be in line with management-tasks.md in FastAPI repo. PR [#462](https://github.com/fastapi/asyncer/pull/462) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 📝 Add contribution instructions about LLM generated code and comments and automated tools for PRs. PR [#449](https://github.com/fastapi/asyncer/pull/449) by [@alejsdev](https://github.com/alejsdev).
+* 🐛 Fix copy button in `custom.js`. PR [#448](https://github.com/fastapi/asyncer/pull/448) by [@alejsdev](https://github.com/alejsdev).
+
+### Internal
+
+* 🔨 Tweak PDM hook and build process for `asyncer-slim`. PR [#467](https://github.com/fastapi/asyncer/pull/467) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update build setup for `asyncer-slim`, deprecate it, and make it only depend on `asyncer`. PR [#466](https://github.com/fastapi/asyncer/pull/466) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump prek from 0.3.1 to 0.3.2. PR [#463](https://github.com/fastapi/asyncer/pull/463) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.14 to 0.15.0. PR [#461](https://github.com/fastapi/asyncer/pull/461) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Add generate-readme to pre-commit. PR [#460](https://github.com/fastapi/asyncer/pull/460) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Run mypy by pre-commit. PR [#459](https://github.com/fastapi/asyncer/pull/459) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump ruff from 0.14.13 to 0.14.14. PR [#457](https://github.com/fastapi/asyncer/pull/457) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.3.0 to 0.3.1. PR [#458](https://github.com/fastapi/asyncer/pull/458) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.2.30 to 0.3.0. PR [#456](https://github.com/fastapi/asyncer/pull/456) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump prek from 0.2.25 to 0.2.30. PR [#454](https://github.com/fastapi/asyncer/pull/454) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump anyio from 4.12.0 to 4.12.1. PR [#451](https://github.com/fastapi/asyncer/pull/451) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.21.0 to 0.21.1. PR [#452](https://github.com/fastapi/asyncer/pull/452) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.14.1 to 1.19.1. PR [#453](https://github.com/fastapi/asyncer/pull/453) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.10 to 0.14.13. PR [#450](https://github.com/fastapi/asyncer/pull/450) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Ensure that an edit to `uv.lock` gets the `internal` label. PR [#455](https://github.com/fastapi/asyncer/pull/455) by [@svlandeg](https://github.com/svlandeg).
+* 👷 Update Smokeshow, use uv. PR [#447](https://github.com/fastapi/asyncer/pull/447) by [@tiangolo](https://github.com/tiangolo).
+* ⬆️ Migrate to uv. PR [#440](https://github.com/fastapi/asyncer/pull/440) by [@DoctorJohn](https://github.com/DoctorJohn).
+* ✅ Expand test matrix to include Windows and MacOS. PR [#392](https://github.com/fastapi/asyncer/pull/392) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump typer from 0.20.0 to 0.21.0. PR [#444](https://github.com/fastapi/asyncer/pull/444) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/cache from 4 to 5. PR [#428](https://github.com/fastapi/asyncer/pull/428) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump markdown-include-variants from 0.0.5 to 0.0.8. PR [#429](https://github.com/fastapi/asyncer/pull/429) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.5 to 0.14.10. PR [#436](https://github.com/fastapi/asyncer/pull/436) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/download-artifact from 6 to 7. PR [#430](https://github.com/fastapi/asyncer/pull/430) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/upload-artifact from 5 to 6. PR [#431](https://github.com/fastapi/asyncer/pull/431) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.7.0 to 9.7.1. PR [#433](https://github.com/fastapi/asyncer/pull/433) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Update secrets check. PR [#446](https://github.com/fastapi/asyncer/pull/446) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 🔧 Migrate from Material for MkDocs to Zensical. PR [#445](https://github.com/fastapi/asyncer/pull/445) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Update pre-commit to use local Ruff instead of hook, unpin `prek`. PR [#443](https://github.com/fastapi/asyncer/pull/443) by [@YuriiMotov](https://github.com/YuriiMotov).
+
+## 0.0.12 (2025-12-26)
+
+### Breaking Changes
+
+* ➖ Drop support for Python 3.8. PR [#441](https://github.com/fastapi/asyncer/pull/441) by [@tiangolo](https://github.com/tiangolo).
+
+### Docs
+
+* 📝 Update code examples to Python 3.9. PR [#442](https://github.com/fastapi/asyncer/pull/442) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 📝 Relax the warnings as I have been using Asyncer in production for a while (and other teams as well). PR [#424](https://github.com/fastapi/asyncer/pull/424) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* ⬆️ Use prek as a pre-commit alternative. PR [#437](https://github.com/fastapi/asyncer/pull/437) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 👷 Configure coverage, error on main tests, don't wait for Smokeshow. PR [#435](https://github.com/fastapi/asyncer/pull/435) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 👷 Run Smokeshow always, even on test failures. PR [#434](https://github.com/fastapi/asyncer/pull/434) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 🔥 Remove Material for MkDocs Insiders extra files. PR [#432](https://github.com/fastapi/asyncer/pull/432) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.11 (2025-12-01)
+
+### Fixes
+
+* 📝 Add `sniffio` dependency to project requirements. PR [#421](https://github.com/fastapi/asyncer/pull/421) by [@jujumilk3](https://github.com/jujumilk3).
+
+### Docs
+
+* 📝 Update docs to use `markdown-include-variants`. PR [#419](https://github.com/fastapi/asyncer/pull/419) by [@YuriiMotov](https://github.com/YuriiMotov).
+* 💅 Update CSS to explicitly use emoji font. PR [#420](https://github.com/fastapi/asyncer/pull/420) by [@tiangolo](https://github.com/tiangolo).
+
+### Internal
+
+* ⬆ Bump actions/checkout from 5 to 6. PR [#418](https://github.com/fastapi/asyncer/pull/418) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tiangolo/latest-changes from 0.4.0 to 0.4.1. PR [#417](https://github.com/fastapi/asyncer/pull/417) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump actions/checkout from 5 to 6. PR [#411](https://github.com/fastapi/asyncer/pull/411) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Tweak pre-commit config in CI. PR [#415](https://github.com/fastapi/asyncer/pull/415) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Add pre-commit GitHub Action workflow. PR [#413](https://github.com/fastapi/asyncer/pull/413) by [@tiangolo](https://github.com/tiangolo).
+* 💄 Use font Fira Code to fix display of Rich panels in docs in Windows. PR [#412](https://github.com/fastapi/asyncer/pull/412) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Upgrade Material for MkDocs and remove insiders. PR [#410](https://github.com/fastapi/asyncer/pull/410) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump mkdocs-macros-plugin from 1.4.1 to 1.5.0. PR [#407](https://github.com/fastapi/asyncer/pull/407) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.6.23 to 9.7.0. PR [#406](https://github.com/fastapi/asyncer/pull/406) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.4 to 0.14.5. PR [#408](https://github.com/fastapi/asyncer/pull/408) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#409](https://github.com/fastapi/asyncer/pull/409) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump ruff from 0.14.3 to 0.14.4. PR [#404](https://github.com/fastapi/asyncer/pull/404) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#405](https://github.com/fastapi/asyncer/pull/405) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump mkdocs-material from 9.6.22 to 9.6.23. PR [#402](https://github.com/fastapi/asyncer/pull/402) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.2 to 0.14.3. PR [#401](https://github.com/fastapi/asyncer/pull/401) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#403](https://github.com/fastapi/asyncer/pull/403) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump actions/upload-artifact from 4 to 5. PR [#397](https://github.com/fastapi/asyncer/pull/397) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-macros-plugin from 1.4.0 to 1.4.1. PR [#398](https://github.com/fastapi/asyncer/pull/398) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/download-artifact from 5 to 6. PR [#399](https://github.com/fastapi/asyncer/pull/399) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.14.1 to 0.14.2. PR [#394](https://github.com/fastapi/asyncer/pull/394) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#400](https://github.com/fastapi/asyncer/pull/400) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* 🔧 Add PEP-639 license metadata. PR [#395](https://github.com/fastapi/asyncer/pull/395) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump typer from 0.19.2 to 0.20.0. PR [#393](https://github.com/fastapi/asyncer/pull/393) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.6.21 to 9.6.22. PR [#389](https://github.com/fastapi/asyncer/pull/389) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Configure reminder for `waiting` label in `issue-manager`. PR [#390](https://github.com/fastapi/asyncer/pull/390) by [@YuriiMotov](https://github.com/YuriiMotov).
+* ⬆ Bump ruff from 0.13.3 to 0.14.1. PR [#391](https://github.com/fastapi/asyncer/pull/391) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#388](https://github.com/fastapi/asyncer/pull/388) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+
+## 0.0.10 (2025-10-20)
+
+### Upgrades
+
+* ⬆️ Add support for Python 3.14. PR [#387](https://github.com/fastapi/asyncer/pull/387) by [@svlandeg](https://github.com/svlandeg).
+
+### Internal
+
+* ⬆ Bump astral-sh/setup-uv from 6 to 7. PR [#386](https://github.com/fastapi/asyncer/pull/386) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.13.2 to 0.13.3. PR [#383](https://github.com/fastapi/asyncer/pull/383) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#384](https://github.com/fastapi/asyncer/pull/384) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump mkdocs-macros-plugin from 1.3.9 to 1.4.0. PR [#373](https://github.com/fastapi/asyncer/pull/373) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.17.4 to 0.19.2. PR [#374](https://github.com/fastapi/asyncer/pull/374) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.6.20 to 9.6.21. PR [#379](https://github.com/fastapi/asyncer/pull/379) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tiangolo/issue-manager from 0.5.1 to 0.6.0. PR [#380](https://github.com/fastapi/asyncer/pull/380) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#372](https://github.com/fastapi/asyncer/pull/372) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump ruff from 0.13.0 to 0.13.2. PR [#376](https://github.com/fastapi/asyncer/pull/376) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Update docs previews comment, single comment, add failure status. PR [#377](https://github.com/fastapi/asyncer/pull/377) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.9 (2025-10-01)
+
+### Fixes
+
+* 👽️ Ensure compatibility with AnyIO 4.11.0. PR [#381](https://github.com/fastapi/asyncer/pull/381) by [@svlandeg](https://github.com/svlandeg).
+
+### Docs
+
+* 🩺 Take the GH badge only from pushes to the `main` branch. PR [#284](https://github.com/fastapi/asyncer/pull/284) by [@svlandeg](https://github.com/svlandeg).
+
+### Internal
+
+* 🔥 Remove unused Poetry config file. PR [#382](https://github.com/fastapi/asyncer/pull/382) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump mkdocs-material from 9.5.44 to 9.6.20. PR [#368](https://github.com/fastapi/asyncer/pull/368) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 5 to 6. PR [#318](https://github.com/fastapi/asyncer/pull/318) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/download-artifact from 4 to 5. PR [#346](https://github.com/fastapi/asyncer/pull/346) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.12.12 to 0.13.0. PR [#367](https://github.com/fastapi/asyncer/pull/367) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#369](https://github.com/fastapi/asyncer/pull/369) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#366](https://github.com/fastapi/asyncer/pull/366) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump actions/setup-python from 5 to 6. PR [#360](https://github.com/fastapi/asyncer/pull/360) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/labeler from 5 to 6. PR [#363](https://github.com/fastapi/asyncer/pull/363) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.17.3 to 0.17.4. PR [#364](https://github.com/fastapi/asyncer/pull/364) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.12.10 to 0.12.12. PR [#362](https://github.com/fastapi/asyncer/pull/362) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#357](https://github.com/fastapi/asyncer/pull/357) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump typer from 0.16.1 to 0.17.3. PR [#358](https://github.com/fastapi/asyncer/pull/358) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.4 to 1.13.0. PR [#359](https://github.com/fastapi/asyncer/pull/359) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Detect and label merge conflicts on PRs automatically. PR [#361](https://github.com/fastapi/asyncer/pull/361) by [@svlandeg](https://github.com/svlandeg).
+* ⬆ Bump ruff from 0.12.9 to 0.12.10. PR [#354](https://github.com/fastapi/asyncer/pull/354) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#355](https://github.com/fastapi/asyncer/pull/355) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump mkdocs-macros-plugin from 1.3.7 to 1.3.9. PR [#349](https://github.com/fastapi/asyncer/pull/349) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/checkout from 4 to 5. PR [#348](https://github.com/fastapi/asyncer/pull/348) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 11.2.1 to 11.3.0. PR [#338](https://github.com/fastapi/asyncer/pull/338) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tiangolo/latest-changes from 0.3.2 to 0.4.0. PR [#345](https://github.com/fastapi/asyncer/pull/345) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.16.0 to 0.16.1. PR [#352](https://github.com/fastapi/asyncer/pull/352) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.11.13 to 0.12.9. PR [#350](https://github.com/fastapi/asyncer/pull/350) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#335](https://github.com/fastapi/asyncer/pull/335) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#309](https://github.com/fastapi/asyncer/pull/309) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump pillow from 11.1.0 to 11.2.1. PR [#315](https://github.com/fastapi/asyncer/pull/315) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump cairosvg from 2.7.1 to 2.8.2. PR [#327](https://github.com/fastapi/asyncer/pull/327) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.15.2 to 0.16.0. PR [#331](https://github.com/fastapi/asyncer/pull/331) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.11.0 to 0.11.13. PR [#333](https://github.com/fastapi/asyncer/pull/333) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Remove Google Analytics. PR [#329](https://github.com/fastapi/asyncer/pull/329) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#306](https://github.com/fastapi/asyncer/pull/306) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump ruff from 0.9.10 to 0.11.0. PR [#304](https://github.com/fastapi/asyncer/pull/304) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#301](https://github.com/fastapi/asyncer/pull/301) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump ruff from 0.9.9 to 0.9.10. PR [#300](https://github.com/fastapi/asyncer/pull/300) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.15.1 to 0.15.2. PR [#299](https://github.com/fastapi/asyncer/pull/299) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump typer from 0.12.5 to 0.15.1. PR [#286](https://github.com/fastapi/asyncer/pull/286) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#298](https://github.com/fastapi/asyncer/pull/298) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump ruff from 0.9.7 to 0.9.9. PR [#296](https://github.com/fastapi/asyncer/pull/296) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.9.6 to 0.9.7. PR [#294](https://github.com/fastapi/asyncer/pull/294) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#295](https://github.com/fastapi/asyncer/pull/295) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump mypy from 1.11.2 to 1.14.1. PR [#276](https://github.com/fastapi/asyncer/pull/276) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.8.3 to 0.9.6. PR [#291](https://github.com/fastapi/asyncer/pull/291) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#290](https://github.com/fastapi/asyncer/pull/290) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Update httpx requirement from <0.28.0,>=0.27.0 to >=0.27.0,<0.29.0. PR [#288](https://github.com/fastapi/asyncer/pull/288) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 3 to 5. PR [#273](https://github.com/fastapi/asyncer/pull/273) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-macros-plugin from 1.2.0 to 1.3.7. PR [#252](https://github.com/fastapi/asyncer/pull/252) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Update pre-commit requirement from <4.0.0,>=2.17.0 to >=2.17.0,<5.0.0. PR [#237](https://github.com/fastapi/asyncer/pull/237) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#275](https://github.com/fastapi/asyncer/pull/275) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.10.1 to 1.12.4. PR [#280](https://github.com/fastapi/asyncer/pull/280) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 10.4.0 to 11.1.0. PR [#277](https://github.com/fastapi/asyncer/pull/277) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tiangolo/latest-changes from 0.3.1 to 0.3.2. PR [#261](https://github.com/fastapi/asyncer/pull/261) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.6.5 to 0.8.3. PR [#271](https://github.com/fastapi/asyncer/pull/271) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#222](https://github.com/fastapi/asyncer/pull/222) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* 🔨 Update docs previews script. PR [#267](https://github.com/fastapi/asyncer/pull/267) by [@tiangolo](https://github.com/tiangolo).
+* 🔧 Update build-docs filter paths. PR [#266](https://github.com/fastapi/asyncer/pull/266) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump mkdocs-material from 9.5.34 to 9.5.44. PR [#257](https://github.com/fastapi/asyncer/pull/257) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Fix smokeshow, checkout files on CI. PR [#243](https://github.com/fastapi/asyncer/pull/243) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Use uv for CI. PR [#242](https://github.com/fastapi/asyncer/pull/242) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update `labeler.yml`. PR [#238](https://github.com/fastapi/asyncer/pull/238) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update worfkow deploy-docs-notify URL. PR [#235](https://github.com/fastapi/asyncer/pull/235) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Upgrade Cloudflare GitHub Action. PR [#234](https://github.com/fastapi/asyncer/pull/234) by [@tiangolo](https://github.com/tiangolo).
+* ⬆ Bump mkdocs-macros-plugin from 1.0.5 to 1.2.0. PR [#220](https://github.com/fastapi/asyncer/pull/220) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.6.4 to 0.6.5. PR [#221](https://github.com/fastapi/asyncer/pull/221) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Update pytest requirement from <8.0.0,>=7.0.1 to >=7.0.1,<9.0.0. PR [#207](https://github.com/fastapi/asyncer/pull/207) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.6.2 to 0.6.4. PR [#217](https://github.com/fastapi/asyncer/pull/217) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tiangolo/issue-manager from 0.5.0 to 0.5.1. PR [#219](https://github.com/fastapi/asyncer/pull/219) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.9.0 to 1.10.1. PR [#216](https://github.com/fastapi/asyncer/pull/216) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.5.18 to 9.5.34. PR [#212](https://github.com/fastapi/asyncer/pull/212) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#209](https://github.com/fastapi/asyncer/pull/209) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump typer from 0.12.3 to 0.12.5. PR [#208](https://github.com/fastapi/asyncer/pull/208) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mypy from 1.11.1 to 1.11.2. PR [#206](https://github.com/fastapi/asyncer/pull/206) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👷 Update `issue-manager.yml`. PR [#218](https://github.com/fastapi/asyncer/pull/218) by [@tiangolo](https://github.com/tiangolo).
+* 💚 Set `include-hidden-files` to `True` when using the `upload-artifact` GH action. PR [#215](https://github.com/fastapi/asyncer/pull/215) by [@svlandeg](https://github.com/svlandeg).
+* 👷 Update `latest-changes` GitHub Action. PR [#203](https://github.com/fastapi/asyncer/pull/203) by [@tiangolo](https://github.com/tiangolo).
+
+## 0.0.8 (2024-08-24)
+
+### Refactors
+
+* ♻️ Deprecate `asyncify(cancellable=True)` in favor of `asyncify(abandon_on_cancel=True)`, following AnyIO 4.1.0. PR [#202](https://github.com/fastapi/asyncer/pull/202) by [@tiangolo](https://github.com/tiangolo).
+* ♻️ Import `anyio.from_thread` and `anyio.to_thread` explicitly. PR [#201](https://github.com/fastapi/asyncer/pull/201) by [@tiangolo](https://github.com/tiangolo).
+* ♻️ Update `asyncify` to wrap the function with `functools.wraps` like the other functions. PR [#84](https://github.com/fastapi/asyncer/pull/84) by [@Gowee](https://github.com/Gowee).
+
+### Docs
+
+* 📝 Add docs references to FastAPI's docs on virtual environments and new contributing guide. PR [#200](https://github.com/fastapi/asyncer/pull/200) by [@tiangolo](https://github.com/tiangolo).
 * 📝 Add docs about repo management and team. PR [#184](https://github.com/tiangolo/asyncer/pull/184) by [@tiangolo](https://github.com/tiangolo).
 
 ### Internal
 
+* ⬆ Bump actions/cache from 3 to 4. PR [#114](https://github.com/fastapi/asyncer/pull/114) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.8.11 to 1.9.0. PR [#164](https://github.com/fastapi/asyncer/pull/164) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 10.1.0 to 10.4.0. PR [#167](https://github.com/fastapi/asyncer/pull/167) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump ruff from 0.2.0 to 0.6.2. PR [#199](https://github.com/fastapi/asyncer/pull/199) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#157](https://github.com/fastapi/asyncer/pull/157) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* ⬆ Bump mypy from 1.4.1 to 1.11.1. PR [#171](https://github.com/fastapi/asyncer/pull/171) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔥 Remove unused scripts. PR [#197](https://github.com/fastapi/asyncer/pull/197) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Update converage configs. PR [#196](https://github.com/fastapi/asyncer/pull/196) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Add URLs to `pyproject.toml`, show up in PyPI. PR [#195](https://github.com/fastapi/asyncer/pull/195) by [@tiangolo](https://github.com/tiangolo).
@@ -35,7 +458,7 @@
 * 👷 Update GitHub Actions to download and upload artifacts. PR [#159](https://github.com/tiangolo/asyncer/pull/159) by [@tiangolo](https://github.com/tiangolo).
 * 👷 Tweak CI for test-redistribute, add needed env vars for slim. PR [#158](https://github.com/tiangolo/asyncer/pull/158) by [@tiangolo](https://github.com/tiangolo).
 
-## 0.0.7
+## 0.0.7 (2024-04-30)
 
 ### Internal
 
@@ -43,7 +466,7 @@
 
 In the future Asyncer can include the standard default recommended packages, and `asyncer-slim` can come without those recommended standard packages and with a group of optional dependencies `asyncer-slim[standard]`, equivalent to `asyncer`, for those that want to opt out of those packages.
 
-## 0.0.6
+## 0.0.6 (2024-04-30)
 
 ### Internal
 
@@ -55,7 +478,7 @@ In the future Asyncer can include the standard default recommended packages, and
 * 👷 Add cron to run test once a week on monday. PR [#140](https://github.com/tiangolo/asyncer/pull/140) by [@estebanx64](https://github.com/estebanx64).
 * ⬆️ Upgrade Ruff version and configs. PR [#139](https://github.com/tiangolo/asyncer/pull/139) by [@tiangolo](https://github.com/tiangolo).
 
-## 0.0.5
+## 0.0.5 (2024-02-22)
 
 ### Fixes
 
@@ -65,7 +488,7 @@ In the future Asyncer can include the standard default recommended packages, and
 
 * 👷 Update Publish CI Python version to 3.11. PR [#120](https://github.com/tiangolo/asyncer/pull/120) by [@tiangolo](https://github.com/tiangolo).
 
-## 0.0.4
+## 0.0.4 (2024-01-28)
 
 ### Docs
 
@@ -76,7 +499,7 @@ In the future Asyncer can include the standard default recommended packages, and
 * 🔧 Add Ruff config. PR [#112](https://github.com/tiangolo/asyncer/pull/112) by [@tiangolo](https://github.com/tiangolo).
 * 🔧 Adopt Ruff for formatting and linting and upgrade internal tools. PR [#111](https://github.com/tiangolo/asyncer/pull/111) by [@tiangolo](https://github.com/tiangolo).
 
-## 0.0.3
+## 0.0.3 (2024-01-23)
 
 ### Features
 
@@ -134,7 +557,7 @@ In the future Asyncer can include the standard default recommended packages, and
 * ⬆ Bump dawidd6/action-download-artifact from 2.24.1 to 2.24.2. PR [#54](https://github.com/tiangolo/asyncer/pull/54) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump dawidd6/action-download-artifact from 2.9.0 to 2.24.1. PR [#53](https://github.com/tiangolo/asyncer/pull/53) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
-## 0.0.2
+## 0.0.2 (2022-11-04)
 
 ### Features
 
@@ -171,7 +594,7 @@ In the future Asyncer can include the standard default recommended packages, and
 * ⬆ Update coverage requirement from ^5.5 to ^6.2. PR [#1](https://github.com/tiangolo/asyncer/pull/1) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔧 Upgrade MkDocs Material and update configs. PR [#10](https://github.com/tiangolo/asyncer/pull/10) by [@tiangolo](https://github.com/tiangolo).
 
-## 0.0.1
+## 0.0.1 (2022-01-04)
 
 * First release. 🎉
 

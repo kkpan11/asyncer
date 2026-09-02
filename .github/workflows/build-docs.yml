@@ -4,9 +4,8 @@ on:
     branches:
       - main
   pull_request:
-    types:
-      - opened
-      - synchronize
+permissions: {}
+
 jobs:
   changes:
     runs-on: ubuntu-latest
@@ -17,9 +16,11 @@ jobs:
     outputs:
       docs: ${{ steps.filter.outputs.docs }}
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     # For pull requests it's not necessary to checkout the code but for the main branch it is
-    - uses: dorny/paths-filter@v3
+      with:
+        persist-credentials: false
+    - uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d # v4.0.3
       id: filter
       with:
         filters: |
@@ -27,15 +28,13 @@ jobs:
             - README.md
             - docs/**
             - docs_src/**
-            - requirements-docs.txt
-            - requirements-docs-insiders.txt
             - pyproject.toml
+            - uv.lock
             - mkdocs.yml
-            - mkdocs.insiders.yml
-            - mkdocs.maybe-insiders.yml
-            - mkdocs.no-insiders.yml
+            - mkdocs.env.yml
             - .github/workflows/build-docs.yml
             - .github/workflows/deploy-docs.yml
+            - data/**
 
   build-docs:
     needs:
@@ -47,36 +46,30 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: "3.11"
-      - uses: actions/cache@v4
-        id: cache
+          python-version-file: ".python-version"
+      - name: Setup uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
         with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ runner.os }}-python-docs-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml', 'requirements-docs.txt', 'requirements-docs-insiders.txt') }}-v01
+          version: "latest-known"
+          enable-cache: true
+          cache-dependency-glob: |
+            pyproject.toml
+            uv.lock
       - name: Install docs extras
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-docs.txt
-      - name: Install Material for MkDocs Insiders
-        if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-docs-insiders.txt
-        env:
-          TOKEN: ${{ secrets.ASYNCER_MKDOCS_MATERIAL_INSIDERS }}
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-cards-${{ github.ref }}
-          path: .cache
-      - name: Verify README
-        run: python ./scripts/docs.py verify-readme
+        run: uv sync --locked --no-dev --group docs
       - name: Build Docs
-        run: python ./scripts/docs.py build
-      - uses: actions/upload-artifact@v4
+        run: uv run ./scripts/docs.py build
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: docs-site
           path: ./site/**
+          include-hidden-files: true
 
   # https://github.com/marketplace/actions/alls-green#why
   docs-all-green:  # This job does nothing and is only used for the branch protection
@@ -86,7 +79,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Decide whether the needed jobs succeeded or failed
-        uses: re-actors/alls-green@release/v1
+        uses: re-actors/alls-green@b5b5b37504aa4183270bd3d855c52a67f212be35 # v1.3.0
         with:
           jobs: ${{ toJSON(needs) }}
           allowed-skips: build-docs

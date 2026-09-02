@@ -1,8 +1,9 @@
-INHERIT: ./mkdocs.maybe-insiders.yml
+INHERIT: ./mkdocs.env.yml
 site_name: Asyncer
 site_description: Asyncer, async and await, focused on developer experience.
 site_url: https://asyncer.tiangolo.com/
 theme:
+  variant: classic
   name: material
   palette:
   - media: "(prefers-color-scheme)"
@@ -47,25 +48,18 @@ theme:
   - toc.follow
 
   icon:
-    repo: fontawesome/brands/github-alt
+    repo: octicons/mark-github-24
   logo: img/icon-white.svg
   favicon: img/favicon.png
   language: en
 repo_name: fastapi/asyncer
 repo_url: https://github.com/fastapi/asyncer
-plugins:
-  # Material for MkDocs
-  search:
-  social:
-  # Other plugins
-  macros:
-    include_yaml:
-    - members: data/members.yml
 
 nav:
   - Asyncer: index.md
-  - Tutorial - User Guide:
+  - "":
     - tutorial/index.md
+    - tutorial/install.md
     - tutorial/first-steps.md
     - tutorial/runnify.md
     - tutorial/soonify.md
@@ -73,16 +67,23 @@ nav:
     - tutorial/asyncify.md
     - tutorial/syncify.md
     - tutorial/syncify-no-raise.md
-  - Resources:
+  - "":
     - resources/index.md
     - help.md
-    - management-tasks.md
-  - About:
+    - contributing.md
+  - "":
     - about/index.md
     - management.md
   - release-notes.md
 
 markdown_extensions:
+  # Zensical
+  zensical.extensions.macros:
+  # Material for MkDocs
+  material.extensions.preview:
+    targets:
+      include:
+        - "*"
   # Python Markdown
   abbr:
   attr_list:
@@ -107,20 +108,10 @@ markdown_extensions:
       class: mermaid
       format: !!python/name:pymdownx.superfences.fence_code_format
   pymdownx.tilde:
+  markdown_include_variants: null
 
   # pymdownx blocks
   pymdownx.blocks.admonition:
-    types:
-    - note
-    - attention
-    - caution
-    - danger
-    - error
-    - tip
-    - hint
-    - warning
-    # Custom types
-    - info
   pymdownx.blocks.details:
   pymdownx.blocks.tab:
     alternate_style: True
@@ -129,35 +120,17 @@ markdown_extensions:
   mdx_include:
 
 extra:
-  analytics:
-    provider: google
-    property: G-T4CRRCXTNY
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thanks for your feedback!
   social:
-  - icon: fontawesome/brands/github-alt
-    link: https://github.com/fastapi/asyncer
-  - icon: fontawesome/brands/twitter
-    link: https://twitter.com/tiangolo
-  - icon: fontawesome/brands/linkedin
-    link: https://www.linkedin.com/in/tiangolo
-  - icon: fontawesome/brands/dev
-    link: https://dev.to/tiangolo
-  - icon: fontawesome/brands/medium
-    link: https://medium.com/@tiangolo
-  - icon: fontawesome/solid/globe
-    link: https://tiangolo.com
+    - icon: octicons/mark-github-24
+      link: https://github.com/fastapi/asyncer
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/tiangolo
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/tiangolo.com
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tiangolo
+    - icon: fontawesome/solid/globe
+      link: https://tiangolo.com
 
 extra_css:
   - css/termynal.css
@@ -167,5 +140,5 @@ extra_javascript:
   - js/termynal.js
   - js/custom.js
 
-hooks:
-  - scripts/mkdocs_hooks.py
+validation:
+  unresolved_references: false

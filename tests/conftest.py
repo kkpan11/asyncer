@@ -1,8 +1,9 @@
-from typing import Any, Callable, Dict, List, Union
+from collections.abc import Callable
+from typing import Any
 
 
 def get_testing_print_function(
-    calls: List[List[Union[str, Dict[str, Any]]]],
+    calls: list[list[str | dict[str, Any]]],
 ) -> Callable[..., Any]:
     def new_print(*args):
         data = []

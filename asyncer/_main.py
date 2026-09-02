@@ -1,27 +1,22 @@
 import functools
 import sys
+from collections.abc import Awaitable, Callable, Coroutine
 from importlib import import_module
 from typing import (
     Any,
-    Awaitable,
-    Callable,
-    Coroutine,
-    Dict,
     Generic,
-    Optional,
+    ParamSpec,
     TypeVar,
-    Union,
 )
-
-if sys.version_info >= (3, 10):
-    from typing import ParamSpec
-else:
-    from typing_extensions import ParamSpec
+from warnings import warn
 
 import anyio
+import anyio.from_thread
+import anyio.to_thread
 import sniffio
 from anyio._core._eventloop import threadlocals
 from anyio.abc import TaskGroup as _TaskGroup
+from asyncer._compat import run_sync
 
 
 # This was obtained with: from anyio._core._eventloop import get_asynclib
@@ -29,7 +24,7 @@ from anyio.abc import TaskGroup as _TaskGroup
 # Released in AnyIO 4.x.x
 # The new function is anyio._core._eventloop.get_async_backend but that returns a
 # class, not a module to extract the TaskGroup class from.
-def get_asynclib(asynclib_name: Union[str, None] = None) -> Any:
+def get_asynclib(asynclib_name: str | None = None) -> Any:
     if asynclib_name is None:
         asynclib_name = sniffio.current_async_library()
 
@@ -59,7 +54,7 @@ class PendingValueException(Exception):
 
 class SoonValue(Generic[T]):
     def __init__(self) -> None:
-        self._stored_value: Union[T, PendingType] = Pending
+        self._stored_value: T | PendingType = Pending
 
     @property
     def value(self) -> T:
@@ -121,7 +116,7 @@ class TaskGroup(_TaskGroup):
         But either way, if you have checkpoints inside the `async with` block (you have
         some `await` there), one or more of the `SoonValue` objects you might have
         could end up having the result value ready before ending the `async with` block.
-        You can check that with `soon_value.pending`. For example:
+        You can check that with `soon_value.ready`. For example:
 
         ```Python
         async def do_work(name: str) -> str:
@@ -131,9 +126,9 @@ class TaskGroup(_TaskGroup):
             result1 = task_group.soonify(do_work)(name="task 1")
             result2 = task_group.soonify(do_work)(name="task 2")
             await anyio.sleep(0)
-            if not result1.pending:
+            if result1.ready:
                 print(result1.value)
-            if not result2.pending:
+            if result2.ready:
                 print(result2.value)
         ```
 
@@ -186,7 +181,7 @@ def create_task_group() -> "TaskGroup":
 
     LibTaskGroup = get_asynclib().TaskGroup
 
-    class ExtendedTaskGroup(LibTaskGroup, TaskGroup):  # type: ignore
+    class ExtendedTaskGroup(LibTaskGroup, TaskGroup):  # type: ignore[valid-type, misc]
         pass
 
     return ExtendedTaskGroup()
@@ -195,7 +190,7 @@ def create_task_group() -> "TaskGroup":
 def runnify(
     async_function: Callable[T_ParamSpec, Coroutine[Any, Any, T_Retval]],
     backend: str = "asyncio",
-    backend_options: Optional[Dict[str, Any]] = None,
+    backend_options: dict[str, Any] | None = None,
 ) -> Callable[T_ParamSpec, T_Retval]:
     """
     Take an async function and create a regular (blocking) function that receives the
@@ -301,6 +296,9 @@ def syncify(
     @functools.wraps(async_function)
     def wrapper(*args: T_ParamSpec.args, **kwargs: T_ParamSpec.kwargs) -> T_Retval:
         current_async_module = (
+            getattr(threadlocals, "current_token", None)
+            or
+            # TODO: remove when deprecating AnyIO 4.10.0
             getattr(threadlocals, "current_async_backend", None)
             or
             # TODO: remove when deprecating AnyIO 3.x
@@ -317,8 +315,9 @@ def syncify(
 def asyncify(
     function: Callable[T_ParamSpec, T_Retval],
     *,
-    cancellable: bool = False,
-    limiter: Optional[anyio.CapacityLimiter] = None,
+    abandon_on_cancel: bool = False,
+    cancellable: bool | None = None,
+    limiter: anyio.CapacityLimiter | None = None,
 ) -> Callable[T_ParamSpec, Awaitable[T_Retval]]:
     """
     Take a blocking function and create an async one that receives the same
@@ -357,13 +356,24 @@ def asyncify(
     original one, that when called runs the same original function in a thread worker
     and returns the result.
     """
+    if cancellable is not None:
+        abandon_on_cancel = cancellable
+        warn(
+            "The `cancellable=` keyword argument to `asyncer.asyncify()` is "
+            "deprecated since Asyncer 0.0.8, following AnyIO 4.1.0. "
+            "Use `abandon_on_cancel=` instead.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
 
+    @functools.wraps(function)
     async def wrapper(
         *args: T_ParamSpec.args, **kwargs: T_ParamSpec.kwargs
     ) -> T_Retval:
         partial_f = functools.partial(function, *args, **kwargs)
-        return await anyio.to_thread.run_sync(
-            partial_f, cancellable=cancellable, limiter=limiter
+
+        return await run_sync(
+            partial_f, abandon_on_cancel=abandon_on_cancel, limiter=limiter
         )
 
     return wrapper

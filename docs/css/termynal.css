@@ -20,7 +20,7 @@
     /* font-size: 18px; */
     font-size: 15px;
     /* font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace; */
-    font-family: 'Roboto Mono', 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    font-family: var(--md-code-font-family), 'Roboto Mono', 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     border-radius: 4px;
     padding: 75px 45px 35px;
     position: relative;
@@ -55,10 +55,19 @@
     text-align: center;
 }
 
-a[data-terminal-control] {
+button[data-terminal-control] {
+    cursor: pointer;
     text-align: right;
     display: block;
+    width: 100%;
     color: #aebbff;
+    border: 0;
+    background: transparent;
+    font: inherit;
+}
+
+button[data-terminal-control]:hover {
+    color: var(--color-text);
 }
 
 [data-ty] {

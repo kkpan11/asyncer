@@ -16,24 +16,7 @@ Let's see a **broken** example first.
 
 Let's see a sync (regular, blocking) function `do_sync_work()`:
 
-```Python hl_lines="3-5"
-# Code above omitted 👆
-
-{!./docs_src/tutorial/asyncify/tutorial001.py[ln:6-8]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-# 🚨 Don't use this, it will block the event loop! 🚨
-
-{!./docs_src/tutorial/asyncify/tutorial001.py!}
-```
-
-</details>
+{* docs_src/tutorial/asyncify/tutorial001_py310.py ln[8:10] hl[8:10] *}
 
 This function could be talking to a database, a remote API, etc. But it doesn't use `await`, it just makes Python wait there without a warning using `time.sleep(1)`.
 
@@ -43,11 +26,7 @@ Here's the problem.
 
 Let's just call that **slow** sync (regular, blocking) function directly from inside the async code 😱:
 
-```Python hl_lines="14"
-# 🚨 Don't use this, it will block the event loop! 🚨
-
-{!./docs_src/tutorial/asyncify/tutorial001.py!}
-```
+{* docs_src/tutorial/asyncify/tutorial001_py310.py hl[14] *}
 
 Because that function is not async, but still it makes Python wait there, it will impede any other async code that could have been started from running. It will all have to **just wait** there doing nothing, wasting computation time. 😭
 
@@ -55,9 +34,7 @@ Because that function is not async, but still it makes Python wait there, it wil
 
 In those cases where you want to run "**sync**" (synchronous, blocking) code **from inside of async** code in a way that is compatible with the rest of the async code you can use **Asyncer**'s `asyncify()`. 🚀
 
-```Python hl_lines="4  13"
-{!./docs_src/tutorial/asyncify/tutorial002.py!}
-```
+{* docs_src/tutorial/asyncify/tutorial002_py310.py hl[4,13] *}
 
 `asyncify()` takes the **sync (blocking) function** that you want to call and then returns another **async function** that takes the actual **arguments for the original sync function**.
 
@@ -67,22 +44,7 @@ Then you can `await` that and get the return value that was **safely** executed 
 
 Notice that now the function `do_sync_work` is not an `async` function:
 
-```Python hl_lines="3-5"
-# Code above omitted 👆
-
-{!./docs_src/tutorial/asyncify/tutorial002.py[ln:7-9]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!./docs_src/tutorial/asyncify/tutorial002.py!}
-```
-
-</details>
+{* docs_src/tutorial/asyncify/tutorial002_py310.py ln[7:9] hl[7:9] *}
 
 ...it even has a line:
 
